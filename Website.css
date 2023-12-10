@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@300&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box; background-color: rgb(189, 217, 250); font-family: "Roboto", sans-serif;}
+
+/* header */
+
+header * {color: antiquewhite;}
+
+
+header {display: flex; 
+justify-content: flex-end; 
+align-items: center; padding: 15px 10%; position: sticky;
+}
+
+a, button{ text-decoration: none;}
+
+.navlinks li {display: inline-block; padding: 0px 14px}
+
+.navlinks li a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(126, 47, 142)
+}
+
+i{
+    margin:0px 10px; cursor: pointer;
+}
+
+button {
+    padding: 9px 30px;
+    background-color: rgba(126,47,142, 1);
+    border: none; cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: rgba(126,47,142, 0.5);
+}
+
+.logo{
+    cursor: pointer; margin-right: auto;
+}
+
+i:hover{transition: all 0.3s ease 0s;
+    color: rgb(126, 47, 142) }
+
+    
