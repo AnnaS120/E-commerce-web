@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/10759aa513.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&family=Yatra+One&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dynamicBar">
+      <span id="dynamicBar"></span>
+    </div>
+    <header>
+      <h1 class="logo">MARGOT</h1>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="#sale" class="scroll-link" id="sale">SALE</a></li>
+          <li><a href="#newin" class="scroll-link">NEW IN</a></li>
+          <li><a href="#gifts" class="scroll-link">Gifts</a></li>
+          <li><a href="#bestsellers" class="scroll-link">Best Sellers</a></li>
+          <li><a href="#about" class="scroll-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="shopping">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" id="searchInput" />
+
+        <div class="cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="quantity">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainImgs">
+        <img src="images/img1.jpg" alt="Main Image" id="img1" />
+        <img src="/images/img2.jpg" alt="Main Image" id="img2" />
+        <img src="/images/img3.jpg" alt="Main Image" id="img3" />
+      </div>
+
+      <section id="sale"></section>
+      <section id="newin"></section>
+      <section id="gifts"></section>
+      <section id="bestsellers"></section>
+      <section id="about"></section>
+    </main>
+    <!--
+ <footer>
+      <p>
+        &copy; COPYRIGHT MARGOT <span id="date"> </span>. ALL RIGHTS RESERVED
+      </p>
+    </footer>-->
+  </body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@300&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box; background-color: rgb(245, 197, 212); font-family: "Roboto", sans-serif;}
+
+/* Dynamic bar */
+
+.dynamicBar{background-color: rgb(243, 234, 223); font-size: x-small; text-align: center; padding: 6px;}
+#dynamicBar{background-color: rgb(243, 234, 223); }
+
+#dynamicBar::before{content:"20% STUDENT DISCOUNT";
+    animation-name:dynamicBar; animation-duration: 20s; animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes dynamicBar {
+    25% {content:"20% STUDENT DISCOUNT";}
+    40% {content:"FREE DELIVERY FOR ORDERS OVER £30";}
+    70% {content:"NEW CANARY WHARF STORE NOW OPEN!";}
+    95% {content:"REFER A FRIEND FOR 15% OFF";}
+}
+
+
+
+/* Header */
+
+header * {color: black;}
+
+
+header {display: flex; 
+justify-content: space-between;
+align-items: center; padding: 2px 2%; position: fixed; width: 100vw; font-size: 0.8rem;
+}
+
+.logo{
+    cursor: pointer; margin-right: 2%; margin-left: 8%; font-family: 'Yatra One', cursive; font-size:1.8rem;}
+
+a{ text-decoration: none;
+}
+
+.navlinks li {display: inline-block; padding: 0px 14px;}
+
+.navlinks li a:hover {
+  transition: transform 0.25s ease-out;
+    text-decoration: underline; font-weight:950; text-decoration-color:rgb(243, 234, 223);}
+
+#sale:hover{text-decoration-color: red}
+
+
+#sale{ color: red;}
+
+i{
+    margin:0px 10px; cursor: pointer;
+}
+
+
+
+.cart span{
+background-color: black;
+color: white;
+border-radius: 50%;
+display: flex;
+position: absolute;
+top: 10px;
+right: 60px;
+font-size: 0.4rem;
+padding: 2px 5px;;
+}
+
+#searchInput {
+border-style: none none solid none; width: 40%; cursor: pointer; font-size: smaller; 
+}
+
+.cart{display: inline;}
+
+
+
+
+/* Main Images */
+ 
+.mainImgs{display: flex;}
+#img1, #img3 {width:30vw; height:75vh; padding: 0%; margin: 0%;}
+#img2 {width:40vw; height:75vh;}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{font-size: xx-small;}
