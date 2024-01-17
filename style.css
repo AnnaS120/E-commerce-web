@@ -231,6 +231,8 @@ position: relative;
 
 /* New & Bestsellers */
 
+
+
 #newBestellers button{
   background: transparent;
   border: none;
@@ -250,8 +252,6 @@ position: relative;
   padding-top: 4%;
 
 }
-
-
 
 .containerNew img, .containerBestsellers img {
   width:320px;
@@ -279,6 +279,7 @@ position: relative;
 
 .activeContainer {
   display:flex !important;
+  flex-wrap: wrap;
 }
 
 
@@ -352,6 +353,9 @@ position: relative;
   padding-bottom: 50px;
 }
 
+.reviews h2{
+  padding-bottom: 2%;
+}
 
 .star {
   letter-spacing: -15px;
@@ -359,10 +363,10 @@ position: relative;
 }
 
 .reviewsScrollableContainer {
-overflow-y: scroll;
 display: flex;
 justify-content: center;
-flex-wrap:wrap;}
+flex-wrap:wrap;
+position: relative;}
 
 .reviewsContent{
   width:600px;
@@ -389,6 +393,33 @@ flex-wrap:wrap;}
   background-color: #f5c5d4ac;
   background-size:100px
 
+}
+
+.reviewsScrollableContainer button{
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin: 0;
+  position: absolute;
+  border: none;
+}
+
+
+#next{
+  bottom: 48%;
+  right: 50px;
+}
+#previous{
+  bottom: 48%;
+  left: 50px;
+  visibility: hidden;
+}
+
+#div1{
+    display:flex;
+}
+#div2{
+    display:none;
 }
 
 

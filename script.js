@@ -84,7 +84,26 @@ for (i = 0; i < coll.length; i++) {
 
 // Reviews // 
 
+const nextBtn = document.getElementById('next');
+const previousBtn = document.getElementById('previous');
+const div1 = document.getElementById('div1');
+const div2 = document.getElementById('div2');
 
+nextBtn.addEventListener("click", () => {
+    div1.style.display = "none";
+    div2.style.display = "flex";
+    previousBtn.style.visibility="visible";
+    nextBtn.style.visibility="hidden";
+  }  
+);
+
+previousBtn.addEventListener("click", () => {
+    div1.style.display = "flex";
+    div2.style.display = "none";
+    previousBtn.style.visibility="hidden";
+    nextBtn.style.visibility="visible";
+  }  
+);
 
 
 // Footer
