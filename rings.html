@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/10759aa513.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&family=Yatra+One&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- Overlay Search-->
+    <div id="overlayContainer">
+      <div id="overlayHeader">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="overlaySearch"
+          placeholder="What are you looking for?"
+        />
+      </div>
+    </div>
+
+    <!--Banner-->
+    <div class="banner">
+      <span id="banner"></span>
+    </div>
+
+    <!--Header-->
+    <header>
+      <a href="index.html"><h1 class="logo">MARGOT</h1>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="/sale.html" class="scroll-link" id="sale">SALE</a></li>
+          <li><a href="/earrings.html" class="scroll-link">Earrings</a></li>
+          <li><a href="/necklaces.html" class="scroll-link">Necklaces</a></li>
+          <li><a href="/bracelets.html" class="scroll-link">Bracelets</a></li>
+          <li><a href="/rings.html" class="scroll-link">Rings</a></li>
+          <li><a href="/about.html" class="scroll-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="containerSearch">
+        <div class="searchBar">
+          <i class="fa-solid fa-magnifying-glass" id="glassOne"></i>
+          <input type="text" placeholder="Search" id="searchInput" />
+        </div>
+
+        <div class="cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="quantity">0</span>
+        </div>
+      </div>
+    </header>
+
+  
+
+    
+    <!--Newsletter-->
+    <section id="newsletter">
+      <div>
+        <h4>BE THE FIRST ONE TO KNOW</h4>
+        <p>Hear about new collections and exclusive offers</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your e-mail" />
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="section-p1">
+      <div class="col">
+        <h4>Contact</h4>
+        <p>Email: MargotSupportTeam@gmail.com</p>
+        <p>Phone: 07762983008</p>
+        <p>Hours: 9am - 6pm</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col about">
+        <h4>About</h4>
+        <a href="">About Us</a>
+        <a href="">Delivery information</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track My Order</a>
+        <a href="">Help</a>
+      </div>
+
+      <div class="col payments">
+        <h4>Secured Payment Gateways</h4>
+        <div class="iconGateways">
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-apple-pay"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-paypal"></i>
+        </div>
+
+      <div class="copyright">
+        <p>
+          &copy; COPYRIGHT MARGOT <span id="date"> </span>. ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

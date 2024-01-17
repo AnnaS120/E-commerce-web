@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/10759aa513.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&family=Yatra+One&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- Overlay Search-->
+    <div id="overlayContainer">
+      <div id="overlayHeader">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="overlaySearch"
+          placeholder="What are you looking for?"
+        />
+      </div>
+    </div>
+
+    <!--Banner-->
+    <div class="banner">
+      <span id="banner"></span>
+    </div>
+
+    <!--Header-->
+  <header>
+      <a href="index.html"><h1 class="logo">MARGOT</h1>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="/sale.html" class="scroll-link" id="sale">SALE</a></li>
+          <li><a href="/earrings.html" class="scroll-link">Earrings</a></li>
+          <li><a href="/necklaces.html" class="scroll-link">Necklaces</a></li>
+          <li><a href="/bracelets.html" class="scroll-link">Bracelets</a></li>
+          <li><a href="/rings.html" class="scroll-link">Rings</a></li>
+          <li><a href="/about.html" class="scroll-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="containerSearch">
+        <div class="searchBar">
+          <i class="fa-solid fa-magnifying-glass" id="glassOne"></i>
+          <input type="text" placeholder="Search" id="searchInput" />
+        </div>
+
+        <div class="cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="quantity">0</span>
+        </div>
+      </div>
+    </header>
+  
+
+<!-- About Us-->
+  <section id="aboutUs">
+  <div class="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Margot, where elegance meets craftsmanship in every gleaming piece. We are a distinguished jewelry brand committed to transforming moments into timeless memories through our exquisite collections.
+      </p>
+      <p>At Margot, we believe in the power of jewelry to narrate stories, celebrate milestones, and express individuality. Our passion for creating exceptional pieces is reflected in the meticulous attention to detail, superior materials, and timeless designs that define our brand.
+
+        Craftsmanship lies at the heart of our creations. Each piece is carefully handcrafted by skilled artisans who bring decades of expertise to every delicate stroke and precise setting. We blend traditional techniques with contemporary aesthetics to produce jewelry that not only stands the test of time but also transcends trends.
+        
+        Our commitment to quality is unwavering. We source the finest gemstones and metals to ensure that each creation radiates brilliance and longevity. From ethically mined diamonds to lustrous pearls, our materials are chosen with both aesthetic and ethical considerations in mind.
+        
+        Beyond the allure of our jewelry, [Your Brand Name] is dedicated to providing an unparalleled customer experience. We understand that each piece we offer becomes a part of your unique story. Our knowledgeable and friendly team is here to guide you through your selection, ensuring that you find the perfect piece that resonates with your style and sentiment.
+        
+        As a brand rooted in values of integrity and transparency, we take pride in fostering a sustainable and responsible approach to jewelry making. From ethically sourced materials to eco-friendly packaging, we strive to minimize our environmental footprint while maximizing the positive impact on the communities we engage with.
+        
+        Whether you are seeking a timeless engagement ring, a statement necklace, or a personalized gift for a loved one, [Your Brand Name] invites you to explore our captivating collections. Each piece is a testament to our commitment to beauty, quality, and the enduring power of meaningful adornments.
+        
+        Discover the artistry that defines [Your Brand Name]—where craftsmanship, elegance, and your unique story converge in every exquisite detail.</p>
+  </div>
+  </section>
+    
+    <!--Newsletter-->
+    <section id="newsletter">
+      <div>
+        <h4>BE THE FIRST ONE TO KNOW</h4>
+        <p>Hear about new collections and exclusive offers</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your e-mail" />
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="section-p1">
+      <div class="col">
+        <h4>Contact</h4>
+        <p>Email: MargotSupportTeam@gmail.com</p>
+        <p>Phone: 07762983008</p>
+        <p>Hours: 9am - 6pm</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col about">
+        <h4>About</h4>
+        <a href="">About Us</a>
+        <a href="">Delivery information</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track My Order</a>
+        <a href="">Help</a>
+      </div>
+
+      <div class="col payments">
+        <h4>Secured Payment Gateways</h4>
+        <div class="iconGateways">
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-apple-pay"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-paypal"></i>
+        </div>
+
+      <div class="copyright">
+        <p>
+          &copy; COPYRIGHT MARGOT <span id="date"> </span>. ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
