@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
     <script
       src="https://kit.fontawesome.com/10759aa513.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +34,21 @@
       </div>
     </div>
 
+
+<!-- Overlay Cart-->
+<div id="cartContainer">
+  <div id="overlayCart">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <h4>Your Shopping Cart</h4>
+  </div>
+  <div id="emptyCart">
+    <p>You cart is empty</p>
+    <br>
+    <button>Start Shopping</button>
+  </div>
+</div>
+
+    
     <!--Banner-->
     <div class="banner">
       <span id="banner"></span>
@@ -60,7 +75,7 @@
         </div>
 
         <div class="cart">
-          <i class="fa-solid fa-bag-shopping"></i>
+          <i class="fa-solid fa-bag-shopping" id="cartIcon"></i>
           <span class="quantity">0</span>
         </div>
       </div>
@@ -145,38 +160,48 @@
     </div>
 
       <div class="containerNew">
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sabrianna-Lqfqsij4EvQ-unsplash.jpg"
+            src="/images/new&bestsellers/silverplatedhaloearrings.jpg"
           />
-
+          <button class="add">+ Add to cart</button>
+          </div>
           <a href=""
             ><h4>Silver Plated Halo Earrings</h4>
-            <h4>£190.00</h4></a
-          >
+            <h4>£190.00</h4></a>
         </div>
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sabrianna-u1Hv_erOQH0-unsplash.jpg"
+            src="/images/new&bestsellers/silverplatedhalonecklace.jpg"
           />
+          <button class="add">+ Add to cart</button>
+          </div>
           <a href=""
             ><h4>Silver Plated Halo Necklace</h4>
             <h4>£179.00</h4></a
           >
         </div>
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sabrianna-wh_rZqPiCuw-unsplash.jpg"
+            src="/images/new&bestsellers/silverplatedhaloring.jpg"
           />
+          <button class="add">+ Add to cart</button>
+          </div>
           <a href=""
             ><h4>Silver Plated Halo Ring</h4>
             <h4>£205.00</h4></a
           >
         </div>
-        <div>
+        <div class="item"> 
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sabrianna-Y_bxfTa_iUA-unsplash.jpg"
+            src="/images/new&bestsellers/whiteandrosegoldprincessring.jpg"
           />
+          <button class="add">+ Add to cart</button>
+          </div>
           <a href=""
             ><h4>White Gold And Rose Gold Princess Ring</h4>
             <h4>£250.00</h4></a
@@ -188,38 +213,49 @@
       </div>
 
       <div class="containerBestsellers">
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sabrianna-yEJwDxAoHc0-unsplash.jpg"
+            src="/images/new&bestsellers/rosegoldpinksapphirering.jpg"
           />
-
+          <button class="add">+ Add to cart</button>
+          </div>
           <a href=""
             ><h4>Rose Gold Pink Sapphire Ring</h4>
             <h4>£300.00</h4></a
           >
         </div>
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/valentina-jorio-zg3oZjdSoDY-unsplash.jpg"
+            src="/images/new&bestsellers/blueheartearrings.jpg"
           />
+          <button class="add">+ Add to cart</button>
+        </div>
           <a href=""
             ><h4>Blue Heart Earrings</h4>
             <h4>£70.00</h4></a
           >
         </div>
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/jasmin-chew-MIyo2hqbAzk-unsplash.jpg"
+            src="/images/new&bestsellers/alexandrabaroquepearlgoldnecklace.jpg"
           />
+          <button class="add">+ Add to cart</button>
+        </div>
           <a href=""
             ><h4>Alexandra Baroque Pearl Gold Necklace</h4>
             <h4>£50.00</h4></a
           >
         </div>
-        <div>
+        <div class="item">
+          <div class="imgContainer">
           <img
-            src="/images/New&Essentials/sama-hosseini-h_ssRPj8UZo-unsplash.jpg"
+            src="/images/new&bestsellers/classicwarmgoldbracelet.jpg"
           />
+          <button class="add">+ Add to cart</button>
+        </div>
           <a href=""
             ><h4>Classic Warm Gold Bracelet</h4>
             <h4>£45.00</h4></a
@@ -299,7 +335,7 @@
       <div class="reviewsScrollableContainer"> 
         <button type="button" id="previous"><i class="fa-solid fa-arrow-left"></i></button>
         <button type="button" id="next"><i class="fa-solid fa-arrow-right"></i></button>
-        <div id="div1">
+        <div id='div1'>
         <div class="reviewsContent">
           <div class="star">
           <i class="fa-solid fa-star"></i>
@@ -310,8 +346,8 @@
           </div>
           <h3>I am very satisfied!</h3> 
           <p>I recently purchased a pair of earrings, and I couldn't be happier! The design is elegant and versatile, suitable for any occasion. The craftsmanship is excellent, and the materials used are of high quality. They are lightweight and comfortable to wear all day. The secure clasps provide peace of mind. Overall, a fantastic purchase, and I highly recommend them.</p>
-          <br>
-          <p>Jane G.</p>
+          
+          <p class="pName">Jane G.</p>
           <p>Silver Plated Halo Earrings</p>
         </div>
         <div class="reviewsContent">
@@ -324,8 +360,8 @@
           </div>
           <h3>I keep coming back to this brand</h3> 
           <p>Absolutely impressed with Margot! Their collection seamlessly blends elegance with quality craftsmanship. The pieces are exquisite, and the attention to detail is impeccable. The customer service is top-notch, making the overall experience delightful. I've found my new go-to for timeless, beautiful jewelry. Highly recommend!</p>
-          <br>
-          <p>Hannah S.</p>
+          
+          <p class="pName">Hannah S.</p>
           <p>Silver Plated Halo Earrings</p>
         </div>
   
@@ -333,7 +369,7 @@
       </div>
 
 
-      <div id="div2">
+      <div  id='div2'>
         <div class="reviewsContent">
           <div class="star">
           <i class="fa-solid fa-star"></i>
@@ -344,8 +380,8 @@
           </div>
           <h3>One of the best pieces I ever owned!</h3> 
           <p>I recently got the best necklace and ring from Margot, and I'm obsessed! The necklace is versatile and adds a touch of elegance to any outfit. The craftsmanship is impeccable. The ring, on the other hand, is a showstopper – exquisite design and top-notch quality. Both pieces are now my everyday go-tos. Worth every penny!</p>
-          <br>
-          <p>Maria W.</p>
+          
+          <p class="pName">Maria W.</p>
           <p>Silver Plated Halo Earrings</p>
         </div>
         <div class="reviewsContent">
@@ -358,12 +394,45 @@
           </div>
           <h3>Best birthday present</h3> 
           <p>My husband gifted me beautiful gold bracelet from Margot and I fell in love with it. It is so elegant yet delicate and everyone I know is always complementing it. Very durable as well so I'm not worried about wearing it daily.</p>
-          <br> <br>
-          <p>Daniela H.</p>
+         <br>
+          <p class="pName">Daniela H.</p>
           <p>Silver Plated Halo Earrings</p>
         </div>
-       
       </div>
+
+      <div  id='div3'>
+        <div class="reviewsContent">
+          <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Worth the price!</h3> 
+          <p>I recently purchased a bracelet from [Brand Name], and I'm thrilled with my choice! The design is stylish and versatile, blending seamlessly with my other jewelry. The craftsmanship is superb, and the attention to detail is evident. It's become my new favorite accessory – comfortable, chic, and definitely worth the investment!</p>
+          
+          <p class="pName">Gabriela Z.</p>
+          <p>Silver Plated Halo Earrings</p>
+        </div>
+        <div class="reviewsContent">
+          <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Beautiful and elegant</h3> 
+          <p>Margot's jewelry is a game-changer! The craftsmanship is superb, and the designs are both classic and on-trend. I love the attention to detail and the quality of materials used. Each piece feels like a work of art. Whether for everyday wear or special occasions, their jewelry adds a touch of elegance to any look. Highly recommended!</p>
+          
+          <p class="pName">Monica C.</p>
+          <p>Silver Plated Halo Earrings</p>
+        </div>
+  
+      
+      </div>
+
 
       </div>
       </div>
@@ -429,11 +498,12 @@
           <i class="fa-brands fa-paypal"></i>
         </div>
 
-      <div class="copyright">
-        <p>
-          &copy; COPYRIGHT MARGOT <span id="date"> </span>. ALL RIGHTS RESERVED
-        </p>
-      </div>
+     
     </footer>
+    <div class="copyright">
+      <p>
+        &copy; COPYRIGHT MARGOT <span id="date"> </span>. ALL RIGHTS RESERVED
+      </p>
+    </div>
   </body>
 </html>
